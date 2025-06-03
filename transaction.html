@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign In / Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon2.ico">
+</head>
+<body>
+  <!-- Header/Navbar -->
+ <header>
+  <div class="logo">NIKE</div>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="#">Find a Store</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Join Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-right">
+    <div class="search-cart">
+      <input type="text" placeholder="Search" />
+      <span class="cart">🛒</span>
+    </div>
+    <a href="transaction.html" class="sign-in-btn">Sign In</a>
+  </div>
+</header>
+
+<div class="toast-message" id="toastMessage">
+  <p>DISCOUNT!</p>
+  <p class="sub-text">New Members Enjoy 15% OFF on The Nike App. Use APP15.</p>
+  <button onclick="dismissToast()">Got it</button>
+</div>
+
+<script>
+  function dismissToast() {
+  const toast = document.getElementById("toastMessage");
+  toast.style.opacity = '0';
+  setTimeout(() => {
+    toast.style.display = 'none';
+  }, 300);
+}
+
+</script>
+
+<!-- Hero Box Section -->
+
+  <!-- Main Authentication Section -->
+  <main>
+    <div class="auth-form-wrapper">
+  <div class="welcome-text">Welcome</div>
+  <div class="toggle-buttons">
+    <button id="btnSignIn" class="toggle-btn active">Sign In</button>
+    <button id="btnSignUp" class="toggle-btn">Sign Up</button>
+  </div>
+
+  <!-- Sign In form -->
+  <form id="formSignIn" class="auth-form active" action="#" method="post" novalidate>
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+    <button type="submit" class="submit-btn">Submit</button>
+
+    <div class="social-text">Or continue with</div>
+    <div class="social-login">
+      <button type="button" class="social-btn google">
+        <img src="https://cdn-icons-png.flaticon.com/24/281/281764.png" alt="Google" />
+        Google
+      </button>
+      <button type="button" class="social-btn facebook">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" />
+        Facebook
+      </button>
+    </div>
+  </form>
+
+  <!-- Sign Up form -->
+  <form id="formSignUp" class="auth-form" action="#" method="post" novalidate>
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+    <input type="password" placeholder="Confirm Password" required />
+    <button type="submit" class="submit-btn">Sign Up</button>
+
+    <div class="social-text">Or continue with</div>
+    <div class="social-login">
+      <button type="button" class="social-btn google">
+        <img src="https://cdn-icons-png.flaticon.com/24/281/281764.png" alt="Google" />
+        Google
+      </button>
+      <button type="button" class="social-btn facebook">
+        <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" />
+        Facebook
+      </button>
+    </div>
+  </form>
+</div>
+
+  </main>
+
+ 
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="#">Find A Store</a></li>
+        <li><a href="#">Become A Member</a></li>
+        <li><a href="#">Running Shoe Finder</a></li>
+        <li><a href="#">Product Advice</a></li>
+        <li><a href="#">Education Discounts</a></li>
+        <li><a href="#">Send Us Feedback</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Help</h3>
+      <ul>
+        <li><a href="#">Get Help</a></li>
+        <li><a href="#">Order Status</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About Nike</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Investors</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Impact</a></li>
+        <li><a href="#">Report a Concern</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-left">© 2025 Nike, Inc. All rights reserved</div>
+    <div class="footer-bottom-right">
+      <a href="#">Guides</a>
+      <a href="#">Terms of Sale</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Nike Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+ 
+
+  <!-- JavaScript for toggling forms and alert -->
+  <script>
+
+ function dismissToast() {
+  document.getElementById('toastMessage').style.display = 'none';
+}
+
+
+
+   
+
+    const btnSignIn = document.getElementById('btnSignIn');
+    const btnSignUp = document.getElementById('btnSignUp');
+    const formSignIn = document.getElementById('formSignIn');
+    const formSignUp = document.getElementById('formSignUp');
+
+    btnSignIn.addEventListener('click', () => {
+      btnSignIn.classList.add('active');
+      btnSignUp.classList.remove('active');
+      formSignIn.classList.add('active');
+      formSignUp.classList.remove('active');
+    });
+
+    btnSignUp.addEventListener('click', () => {
+      btnSignUp.classList.add('active');
+      btnSignIn.classList.remove('active');
+      formSignUp.classList.add('active');
+      formSignIn.classList.remove('active');
+    });
+  </script>
+</body>
+</html>

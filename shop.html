@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Nike</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+   <link rel="icon" type="image/x-icon" href="favicon2.ico">
+</head>
+<body>
+    <div class="shop-page">
+  <header>
+  <div class="logo">NIKE</div>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="#">Find a Store</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Join Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-right">
+    <div class="search-cart">
+      <input type="text" placeholder="Search" />
+      <span class="cart">🛒</span>
+    </div>
+    <a href="transaction.html" class="sign-in-btn">Sign In</a>
+  </div>
+</header>
+
+  <!-- Tagline Banner -->
+<section class="featured-banner">
+  <div class="tagline">
+    <h2> Move, Shop, Customise & Celebrate With Us</h2>
+    <p>No matter what you feel like doing today, it's better as a member.</p>
+    <div class="button-container">
+      <button id="sidebarToggle" class="button1" onclick="openSidebar()">☰ Categories</button>
+    </div>
+  </div>
+</section>
+
+<!-- Sidebar Overlay -->
+<div id="sidebar" class="sidebar-overlay">
+  <div class="sidebar-content">
+    <button class="close-btn" onclick="closeSidebar()">✖</button>
+    <h1>Shop by Category</h1>
+    <div class="category-list-minimal">
+      <a href="#cap" class="category-item-minimal">Cap</a>
+      <a href="#jacket" class="category-item-minimal">Jacket</a>
+      <a href="#men" class="category-item-minimal">Men</a>
+      <a href="#shirt" class="category-item-minimal">Shirt</a>
+      <a href="#short" class="category-item-minimal">Short</a>
+      <a href="#women" class="category-item-minimal">Women</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const sidebar = document.getElementById("sidebar");
+  const toggleButton = document.getElementById("sidebarToggle");
+
+  function openSidebar() {
+    sidebar.style.width = "100%";
+    toggleButton.style.display = "none"; // hide the button
+  }
+
+  function closeSidebar() {
+    sidebar.style.width = "0";
+    toggleButton.style.display = "inline-block"; // show it again
+  }
+
+  // Close sidebar when clicking outside the sidebar content (optional)
+  window.addEventListener("click", function (e) {
+    const content = document.querySelector(".sidebar-content");
+    if (e.target === sidebar) {
+      closeSidebar();
+    }
+  });
+</script>
+
+
+
+<!-- Hero Box Section -->
+<section class="hero-box">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>FLY<br>VINI</h1>
+      <p>Welcome abroad supersonic speed in the first Vini Jr. Mercurial Vapor.</p>
+      <a href="transaction.html" class="btn">SIGN IN FIRST &#8594;</a>
+    </div>
+    <div class="hero-image">
+      <img src="nike.avif" alt="Stylish Outfit" />
+    </div>
+  </div>
+</section>
+
+
+
+<section id="cap" class="category-section"> 
+  <h2>Cap</h2>
+  <div class="scroll-box">
+
+    <div class="product-card">
+      <img src="CAP1.PNG" alt="Cap 1">
+      <div class="product-card-content">
+        <p>Classic Nike Cap</p>
+        <p class="price">₱1,299.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="CAP2.PNG" alt="Cap 2">
+      <div class="product-card-content">
+        <p>Black Adjustable Cap</p>
+        <p class="price">₱1,499.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="CAP_3.PNG" alt="Cap 3">
+      <div class="product-card-content">
+        <p>Sport Fit Cap</p>
+        <p class="price">₱1,399.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="CAP4.PNG" alt="Cap 4">
+      <div class="product-card-content">
+        <p>Cool Fit Cap</p>
+        <p class="price">₱1,399.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="CAP5.PNG" alt="Cap 5">
+      <div class="product-card-content">
+        <p>Lightweight Cap</p>
+        <p class="price">₱1,399.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- JACKET SECTION -->
+<section id="jacket" class="category-section">
+  <h2>Jacket</h2>
+  <div class="scroll-box">
+
+    <div class="product-card">
+      <img src="JACKET1.PNG" alt="Windrunner Jacket">
+      <div class="product-card-content">
+        <p>Nike Windrunner Jacket</p>
+        <p class="price">₱4,599.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="jacket2.png" alt="Fleece Hoodie">
+      <div class="product-card-content">
+        <p>Tech Fleece Full-Zip Hoodie</p>
+        <p class="price">₱3,899.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="jacket3.png" alt="Therma-FIT Jacket">
+      <div class="product-card-content">
+        <p>Therma-FIT Repel Jacket</p>
+        <p class="price">₱5,299.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="JACKET4.PNG" alt="Insulated Bomber">
+      <div class="product-card-content">
+        <p>Insulated Bomber Jacket</p>
+        <p class="price">₱4,999.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="JACKET5.PNG" alt="Lightweight Training Jacket">
+      <div class="product-card-content">
+        <p>Lightweight Training Jacket</p>
+        <p class="price">₱4,199.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- MEN SECTION -->
+<section id="men" class="category-section">
+  <h2>Men</h2>
+  <div class="scroll-box">
+
+    <div class="product-card">
+      <img src="MEN2.PNG" alt="Training Tee">
+      <div class="product-card-content">
+        <p>Men's Training Tee</p>
+        <p class="price">₱1,299.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN3.PNG" alt="Joggers">
+      <div class="product-card-content">
+        <p>Men's Joggers</p>
+        <p class="price">₱2,099.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN4.PNG" alt="Air Max Shoes">
+      <div class="product-card-content">
+        <p>Men's Air Max Shoes</p>
+        <p class="price">₱6,499.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN5.PNG" alt="Revolution 6">
+      <div class="product-card-content">
+        <p>Nike Revolution 6</p>
+        <p class="price">₱3,799.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN6.png" alt="Downshifter">
+      <div class="product-card-content">
+        <p>Downshifter Running Shoes</p>
+        <p class="price">₱3,299.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN7.png" alt="Court Vision Low">
+      <div class="product-card-content">
+        <p>Court Vision Low</p>
+        <p class="price">₱3,899.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN8.png" alt="Renew Ride">
+      <div class="product-card-content">
+        <p>Renew Ride 3</p>
+        <p class="price">₱3,499.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN9.png" alt="Flex Experience">
+      <div class="product-card-content">
+        <p>Flex Experience Run 11</p>
+        <p class="price">₱2,999.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN10.png" alt="Zoom Fly 5">
+      <div class="product-card-content">
+        <p>Zoom Fly 5</p>
+        <p class="price">₱6,999.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN11.png" alt="Structure 25">
+      <div class="product-card-content">
+        <p>Nike Structure 25</p>
+        <p class="price">₱6,299.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN12.png" alt="Metcon 9">
+      <div class="product-card-content">
+        <p>Nike Metcon 9</p>
+        <p class="price">₱6,499.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN13.png" alt="Infinity Run">
+      <div class="product-card-content">
+        <p>Infinity Run 4</p>
+        <p class="price">₱7,499.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN14.png" alt="ZoomX Vaporfly">
+      <div class="product-card-content">
+        <p>ZoomX Vaporfly Next%</p>
+        <p class="price">₱11,999.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="MEN15.png" alt="Pegasus Trail">
+      <div class="product-card-content">
+        <p>Pegasus Trail 4 GORE-TEX</p>
+        <p class="price">₱7,299.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="NIKE ZA.png" alt="Air Zoom Alphafly">
+      <div class="product-card-content">
+        <p>Air Zoom Alphafly NEXT%</p>
+        <p class="price">₱12,499.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SHIRT SECTION -->
+<section id="shirt" class="category-section">
+  <h2>Shirt</h2>
+  <div class="scroll-box">
+
+    <div class="product-card">
+      <img src="shirt1.png" alt="Graphic T-Shirt">
+      <div class="product-card-content">
+        <p>Graphic T-Shirt</p>
+        <p class="price">₱1,199.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt2.png" alt="Dry-FIT Shirt">
+      <div class="product-card-content">
+        <p>Dry-FIT Shirt</p>
+        <p class="price">₱1,499.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt3.png" alt="Everyday Tee">
+      <div class="product-card-content">
+        <p>Everyday Tee</p>
+        <p class="price">₱1,299.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt4.png" alt="Classic Fit Tee">
+      <div class="product-card-content">
+        <p>Classic Fit Tee</p>
+        <p class="price">₱1,199.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt5.png" alt="Oversized Shirt">
+      <div class="product-card-content">
+        <p>Oversized Shirt</p>
+        <p class="price">₱1,599.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt6.png" alt="Sport Style Tee">
+      <div class="product-card-content">
+        <p>Sport Style Tee</p>
+        <p class="price">₱1,399.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt7.png" alt="Court Graphic Tee">
+      <div class="product-card-content">
+        <p>Court Graphic Tee</p>
+        <p class="price">₱1,499.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt8.png" alt="Heritage Shirt">
+      <div class="product-card-content">
+        <p>Heritage Shirt</p>
+        <p class="price">₱1,599.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt9.png" alt="Essential Logo Tee">
+      <div class="product-card-content">
+        <p>Essential Logo Tee</p>
+        <p class="price">₱1,199.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="shirt10.png" alt="Air Max Tee">
+      <div class="product-card-content">
+        <p>Air Max Tee</p>
+        <p class="price">₱1,399.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SHORT SECTION -->
+<section id="short" class="category-section">
+  <h2>Short</h2>
+  <div class="scroll-box">
+
+    <div class="product-card">
+      <img src="short1.png" alt="Men's Training Shorts">
+      <div class="product-card-content">
+        <p>Men's Training Shorts</p>
+        <p class="price">₱1,799.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="short2.png" alt="Running Shorts">
+      <div class="product-card-content">
+        <p>Running Shorts</p>
+        <p class="price">₱1,899.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="short3.png" alt="Classic Fit Shorts">
+      <div class="product-card-content">
+        <p>Classic Fit Shorts</p>
+        <p class="price">₱1,599.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="short4.png" alt="Dri-FIT Flex Shorts">
+      <div class="product-card-content">
+        <p>Dri-FIT Flex Shorts</p>
+        <p class="price">₱1,999.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="short5.png" alt="Pro Compression Shorts">
+      <div class="product-card-content">
+        <p>Pro Compression Shorts</p>
+        <p class="price">₱2,199.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="short6.png" alt="Heritage Woven Shorts">
+      <div class="product-card-content">
+        <p>Heritage Woven Shorts</p>
+        <p class="price">₱1,699.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="short7.png" alt="Air Mesh Shorts">
+      <div class="product-card-content">
+        <p>Air Mesh Shorts</p>
+        <p class="price">₱1,799.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="short8.png" alt="Woven Cargo Shorts">
+      <div class="product-card-content">
+        <p>Woven Cargo Shorts</p>
+        <p class="price">₱2,099.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="short9.png" alt="Court Flex Shorts">
+      <div class="product-card-content">
+        <p>Court Flex Shorts</p>
+        <p class="price">₱1,899.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="short10.png" alt="Everyday Essentials Shorts">
+      <div class="product-card-content">
+        <p>Everyday Essentials Shorts</p>
+        <p class="price">₱1,699.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WOMEN SECTION -->
+<section id="women" class="category-section">
+  <h2>Women</h2>
+  <div class="scroll-box">
+
+    <div class="product-card">
+      <img src="NIKE BEIGE WOMEN (2).PNG" alt="Women's Sports Bra">
+      <div class="product-card-content">
+        <p>Women's Sports Bra</p>
+        <p class="price">₱1,399.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="NIKE GRAY WOMEN.PNG" alt="Women's Joggers">
+      <div class="product-card-content">
+        <p>Women's Joggers</p>
+        <p class="price">₱2,299.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="NIKE PINK WOMEN.PNG" alt="Air Zoom Pegasus">
+      <div class="product-card-content">
+        <p>Air Zoom Pegasus</p>
+        <p class="price">₱6,799.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="NIKE WOMEN2.PNG" alt="Running Tank Top">
+      <div class="product-card-content">
+        <p>Running Tank Top</p>
+        <p class="price">₱1,199.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="NIKE WOMEN3.PNG" alt="Dri-FIT Shorts">
+      <div class="product-card-content">
+        <p>Dri-FIT Shorts</p>
+        <p class="price">₱1,799.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="WOMEN7.png" alt="Yoga Leggings">
+      <div class="product-card-content">
+        <p>Yoga Leggings</p>
+        <p class="price">₱2,299.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women8.png" alt="Fleece Hoodie">
+      <div class="product-card-content">
+        <p>Fleece Hoodie</p>
+        <p class="price">₱3,499.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women9.png" alt="Sports Jacket">
+      <div class="product-card-content">
+        <p>Sports Jacket</p>
+        <p class="price">₱4,599.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women11.png" alt="Lightweight Vest">
+      <div class="product-card-content">
+        <p>Lightweight Vest</p>
+        <p class="price">₱2,199.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women10.png" alt="Running Shoes">
+      <div class="product-card-content">
+        <p>Running Shoes</p>
+        <p class="price">₱5,799.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women12.png" alt="Compression Shorts">
+      <div class="product-card-content">
+        <p>Compression Shorts</p>
+        <p class="price">₱1,999.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women13.png" alt="Long Sleeve Tee">
+      <div class="product-card-content">
+        <p>Long Sleeve Tee</p>
+        <p class="price">₱1,599.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women14.png" alt="Training Pants">
+      <div class="product-card-content">
+        <p>Training Pants</p>
+        <p class="price">₱2,399.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women15.png" alt="Casual Sneakers">
+      <div class="product-card-content">
+        <p>Casual Sneakers</p>
+        <p class="price">₱4,199.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="women6.png" alt="Windbreaker Jacket">
+      <div class="product-card-content">
+        <p>Windbreaker Jacket</p>
+        <p class="price">₱3,899.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="#">Find A Store</a></li>
+        <li><a href="#">Become A Member</a></li>
+        <li><a href="#">Running Shoe Finder</a></li>
+        <li><a href="#">Product Advice</a></li>
+        <li><a href="#">Education Discounts</a></li>
+        <li><a href="#">Send Us Feedback</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Help</h3>
+      <ul>
+        <li><a href="#">Get Help</a></li>
+        <li><a href="#">Order Status</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About Nike</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Investors</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Impact</a></li>
+        <li><a href="#">Report a Concern</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-left">© 2025 Nike, Inc. All rights reserved</div>
+    <div class="footer-bottom-right">
+      <a href="#">Guides</a>
+      <a href="#">Terms of Sale</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Nike Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
